@@ -1,53 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
   <defs>
     <style>
-      .wing { fill: #dc143c; stroke: #000; stroke-width: 1.5; }
-      .wing-stripe { fill: #001a4d; stroke: none; }
-      .body { fill: #dc143c; stroke: #000; stroke-width: 2; }
-      .head { fill: white; stroke: #000; stroke-width: 2; }
-      .circle { fill: white; stroke: #000; stroke-width: 2; }
-      .text-main { font-family: Arial, sans-serif; font-size: 48px; font-weight: bold; fill: #001a4d; text-anchor: middle; letter-spacing: 3px; }
-      .text-sub { font-family: Arial, sans-serif; font-size: 36px; font-weight: bold; fill: #001a4d; text-anchor: middle; }
+      .wing-red { fill: #DC143C; stroke: #000; stroke-width: 1.5; }
+      .wing-blue { fill: #001A4D; stroke: none; }
+      .body-red { fill: #DC143C; stroke: #000; stroke-width: 2; }
+      .head-white { fill: white; stroke: #000; stroke-width: 2; }
+      .circle { fill: white; stroke: #000; stroke-width: 2.5; }
+      .text-hovaa { font-family: Arial, sans-serif; font-size: 56px; font-weight: bold; fill: #001A4D; text-anchor: middle; letter-spacing: 4px; }
+      .text-hc { font-family: Arial, sans-serif; font-size: 48px; font-weight: bold; fill: #001A4D; text-anchor: middle; }
     </style>
   </defs>
   
   <!-- Bottom circle -->
-  <circle cx="150" cy="150" r="135" class="circle"/>
+  <circle cx="200" cy="190" r="160" class="circle"/>
   
-  <!-- Left wing - outer feathers (red) -->
-  <path d="M 80 120 Q 50 110 30 100 Q 20 95 25 105 Q 50 120 75 130" class="wing"/>
-  <path d="M 75 130 Q 50 125 32 118 Q 22 114 28 125 Q 55 138 75 145" class="wing"/>
-  <path d="M 75 145 Q 50 140 32 135 Q 22 131 28 142 Q 55 155 75 160" class="wing"/>
-  <path d="M 80 160 Q 55 155 35 152 Q 25 150 30 160 Q 58 172 80 175" class="wing"/>
+  <!-- LEFT WING - Outer red feathers -->
+  <path d="M 90 160 Q 40 135 10 115 Q -5 105 5 120 Q 45 145 90 170" class="wing-red"/>
+  <path d="M 85 180 Q 35 160 8 145 Q -8 138 5 155 Q 50 180 85 195" class="wing-red"/>
+  <path d="M 88 200 Q 38 182 10 170 Q -8 165 5 180 Q 50 200 88 215" class="wing-red"/>
+  <path d="M 92 220 Q 42 205 15 195 Q -5 190 8 205 Q 55 220 92 235" class="wing-red"/>
   
-  <!-- Left wing - inner stripes (blue) -->
-  <path d="M 85 125 Q 65 118 48 112 Q 42 110 45 118 Q 65 128 85 135" class="wing-stripe"/>
-  <path d="M 85 140 Q 65 133 48 128 Q 42 126 45 134 Q 65 143 85 150" class="wing-stripe"/>
-  <path d="M 85 155 Q 65 148 48 144 Q 42 142 45 150 Q 65 158 85 165" class="wing-stripe"/>
+  <!-- LEFT WING - Inner blue stripes -->
+  <path d="M 100 168 Q 60 150 35 138 Q 25 135 32 148 Q 65 165 100 180" class="wing-blue"/>
+  <path d="M 100 188 Q 60 170 35 158 Q 25 155 32 168 Q 65 185 100 200" class="wing-blue"/>
+  <path d="M 100 208 Q 60 190 35 178 Q 25 175 32 188 Q 65 205 100 220" class="wing-blue"/>
   
-  <!-- Right wing - outer feathers (red) -->
-  <path d="M 220 120 Q 250 110 270 100 Q 280 95 275 105 Q 250 120 225 130" class="wing"/>
-  <path d="M 225 130 Q 250 125 268 118 Q 278 114 272 125 Q 245 138 225 145" class="wing"/>
-  <path d="M 225 145 Q 250 140 268 135 Q 278 131 272 142 Q 245 155 225 160" class="wing"/>
-  <path d="M 220 160 Q 245 155 265 152 Q 275 150 270 160 Q 242 172 220 175" class="wing"/>
+  <!-- RIGHT WING - Outer red feathers -->
+  <path d="M 310 160 Q 360 135 390 115 Q 405 105 395 120 Q 355 145 310 170" class="wing-red"/>
+  <path d="M 315 180 Q 365 160 392 145 Q 408 138 395 155 Q 350 180 315 195" class="wing-red"/>
+  <path d="M 312 200 Q 362 182 390 170 Q 408 165 395 180 Q 350 200 312 215" class="wing-red"/>
+  <path d="M 308 220 Q 358 205 385 195 Q 405 190 392 205 Q 345 220 308 235" class="wing-red"/>
   
-  <!-- Right wing - inner stripes (blue) -->
-  <path d="M 215 125 Q 235 118 252 112 Q 258 110 255 118 Q 235 128 215 135" class="wing-stripe"/>
-  <path d="M 215 140 Q 235 133 252 128 Q 258 126 255 134 Q 235 143 215 150" class="wing-stripe"/>
-  <path d="M 215 155 Q 235 148 252 144 Q 258 142 255 150 Q 235 158 215 165" class="wing-stripe"/>
+  <!-- RIGHT WING - Inner blue stripes -->
+  <path d="M 300 168 Q 340 150 365 138 Q 375 135 368 148 Q 335 165 300 180" class="wing-blue"/>
+  <path d="M 300 188 Q 340 170 365 158 Q 375 155 368 168 Q 335 185 300 200" class="wing-blue"/>
+  <path d="M 300 208 Q 340 190 365 178 Q 375 175 368 188 Q 335 205 300 220" class="wing-blue"/>
   
   <!-- Eagle body (red) -->
-  <ellipse cx="150" cy="115" rx="28" ry="35" class="body"/>
+  <ellipse cx="200" cy="140" rx="32" ry="42" class="body-red"/>
   
   <!-- Eagle head (white) -->
-  <circle cx="150" cy="85" r="12" class="head"/>
+  <circle cx="200" cy="100" r="14" class="head-white"/>
+  <circle cx="205" cy="98" r="4" fill="#000"/>
   
-  <!-- Head details -->
-  <circle cx="153" cy="83" r="3" fill="#000"/>
+  <!-- Beak -->
+  <path d="M 208 100 L 220 98 L 208 102 Z" fill="#000"/>
   
   <!-- Text HOVÅS -->
-  <text x="150" y="125" class="text-main">HOVÅS</text>
+  <text x="200" y="155" class="text-hovaa">HOVÅS</text>
   
   <!-- Text HC -->
-  <text x="150" y="260" class="text-sub">HC</text>
+  <text x="200" y="330" class="text-hc">HC</text>
 </svg>
