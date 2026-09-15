@@ -1,37 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280">
   <defs>
     <style>
-      .hovas-circle { fill: white; stroke: #000; stroke-width: 2; }
-      .hovas-wing { fill: #dc143c; stroke: #001a4d; stroke-width: 1.5; }
-      .hovas-wing-stripe { fill: #001a4d; }
-      .hovas-body { fill: #dc143c; stroke: #001a4d; stroke-width: 1.5; }
-      .hovas-head { fill: white; stroke: #001a4d; stroke-width: 1.5; }
-      .hovas-text { font-family: Arial, sans-serif; font-weight: bold; fill: #001a4d; text-anchor: middle; }
-      .hovas-title { font-size: 24px; letter-spacing: 2px; }
-      .hovas-sub { font-size: 18px; }
+      .wing { fill: #dc143c; stroke: #000; stroke-width: 1.5; }
+      .wing-stripe { fill: #001a4d; stroke: none; }
+      .body { fill: #dc143c; stroke: #000; stroke-width: 2; }
+      .head { fill: white; stroke: #000; stroke-width: 2; }
+      .circle { fill: white; stroke: #000; stroke-width: 2; }
+      .text-main { font-family: Arial, sans-serif; font-size: 48px; font-weight: bold; fill: #001a4d; text-anchor: middle; letter-spacing: 3px; }
+      .text-sub { font-family: Arial, sans-serif; font-size: 36px; font-weight: bold; fill: #001a4d; text-anchor: middle; }
     </style>
   </defs>
   
-  <!-- Main circle -->
-  <circle cx="100" cy="100" r="95" class="hovas-circle"/>
+  <!-- Bottom circle -->
+  <circle cx="150" cy="150" r="135" class="circle"/>
   
-  <!-- Left wing -->
-  <path d="M 70 100 Q 50 90 35 75 Q 30 70 28 80 Q 40 95 60 105" class="hovas-wing"/>
-  <path d="M 65 95 Q 48 88 38 75 Q 35 72 34 80 Q 48 92 65 100" class="hovas-wing"/>
-  <path d="M 60 105 Q 45 100 38 88 Q 36 85 36 92 Q 48 105 60 110" class="hovas-wing"/>
+  <!-- Left wing - outer feathers (red) -->
+  <path d="M 80 120 Q 50 110 30 100 Q 20 95 25 105 Q 50 120 75 130" class="wing"/>
+  <path d="M 75 130 Q 50 125 32 118 Q 22 114 28 125 Q 55 138 75 145" class="wing"/>
+  <path d="M 75 145 Q 50 140 32 135 Q 22 131 28 142 Q 55 155 75 160" class="wing"/>
+  <path d="M 80 160 Q 55 155 35 152 Q 25 150 30 160 Q 58 172 80 175" class="wing"/>
   
-  <!-- Right wing -->
-  <path d="M 130 100 Q 150 90 165 75 Q 170 70 172 80 Q 160 95 140 105" class="hovas-wing"/>
-  <path d="M 135 95 Q 152 88 162 75 Q 165 72 166 80 Q 152 92 135 100" class="hovas-wing"/>
-  <path d="M 140 105 Q 155 100 162 88 Q 164 85 164 92 Q 152 105 140 110" class="hovas-wing"/>
+  <!-- Left wing - inner stripes (blue) -->
+  <path d="M 85 125 Q 65 118 48 112 Q 42 110 45 118 Q 65 128 85 135" class="wing-stripe"/>
+  <path d="M 85 140 Q 65 133 48 128 Q 42 126 45 134 Q 65 143 85 150" class="wing-stripe"/>
+  <path d="M 85 155 Q 65 148 48 144 Q 42 142 45 150 Q 65 158 85 165" class="wing-stripe"/>
   
-  <!-- Eagle body -->
-  <ellipse cx="100" cy="95" rx="12" ry="18" class="hovas-body"/>
+  <!-- Right wing - outer feathers (red) -->
+  <path d="M 220 120 Q 250 110 270 100 Q 280 95 275 105 Q 250 120 225 130" class="wing"/>
+  <path d="M 225 130 Q 250 125 268 118 Q 278 114 272 125 Q 245 138 225 145" class="wing"/>
+  <path d="M 225 145 Q 250 140 268 135 Q 278 131 272 142 Q 245 155 225 160" class="wing"/>
+  <path d="M 220 160 Q 245 155 265 152 Q 275 150 270 160 Q 242 172 220 175" class="wing"/>
   
-  <!-- Eagle head -->
-  <circle cx="100" cy="75" r="8" class="hovas-head"/>
+  <!-- Right wing - inner stripes (blue) -->
+  <path d="M 215 125 Q 235 118 252 112 Q 258 110 255 118 Q 235 128 215 135" class="wing-stripe"/>
+  <path d="M 215 140 Q 235 133 252 128 Q 258 126 255 134 Q 235 143 215 150" class="wing-stripe"/>
+  <path d="M 215 155 Q 235 148 252 144 Q 258 142 255 150 Q 235 158 215 165" class="wing-stripe"/>
   
-  <!-- Text -->
-  <text x="100" y="155" class="hovas-text hovas-title">HOVÅS</text>
-  <text x="100" y="185" class="hovas-text hovas-sub">HC</text>
+  <!-- Eagle body (red) -->
+  <ellipse cx="150" cy="115" rx="28" ry="35" class="body"/>
+  
+  <!-- Eagle head (white) -->
+  <circle cx="150" cy="85" r="12" class="head"/>
+  
+  <!-- Head details -->
+  <circle cx="153" cy="83" r="3" fill="#000"/>
+  
+  <!-- Text HOVÅS -->
+  <text x="150" y="125" class="text-main">HOVÅS</text>
+  
+  <!-- Text HC -->
+  <text x="150" y="260" class="text-sub">HC</text>
 </svg>
