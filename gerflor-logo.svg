@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Gerflor text -->
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#001a4d">Gerflor</text>
+  
+  <!-- Underline -->
+  <line x1="20" y1="90" x2="340" y2="90" stroke="#001a4d" stroke-width="4"/>
+  
+  <!-- theflooringgroup text -->
+  <text x="20" y="115" font-family="Arial, sans-serif" font-size="16" fill="#001a4d" letter-spacing="1">theflooringgroup</text>
+</svg>
